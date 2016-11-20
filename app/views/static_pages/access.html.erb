@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>アクセス</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="../css/contents.css" media="all">
+</head>
+<body>
+<script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript">
+// 初期表示時処理
+$(document).ready(function(){
+});
+</script>
+<form id="frmAccess" action="<?php print($_SERVER['PHP_SELF']) ?>" method="post">
+	<input type="hidden" id="hdnTrans" name="hdnTrans"/>
+	<div id="divHeader">
+        <!--ヘッダー-->
+        <?php include("../contents/includeHeader.php"); ?>
+    </div>
+    <div id="divNav">
+        <!--ナビゲーション-->
+        <?php include("../contents/includeNav.php"); ?>
+    </div>
+    <div id="divSearch">
+        <!--空室検索-->
+        <hr>
+        <?php include("../contents/includeSearch.php"); ?>
+    </div>
+    <div id="divContents">
+    	<div id="divContentsMain">
+        	<div id="divImgNightView">
+                <div id="divTitleBack">
+                	<div id="divTitle">
+                    	<img src="../images/lblAccess.png" alt="アクセス" width="72" height="17">
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div id="divTrain">
+                <div id="divImgLblTrain">
+                    <img src="../images/lblTrain.png" alt="電車でお越しのお客様" width="272" height="21">
+                </div>
+                <div id="divImgTrainMap">
+                    <img src="../images/imgTrainMap.png" alt="路線図" width="794" height="652">
+                </div>
+            </div>
+            <div id="divMap">
+            	<div id="divOte">
+                    <div id="divImgLblOte">
+                        <img src="../images/lblOtemachi.png" alt="PLACID 大手町" width="212" height="21">
+                    </div>
+                    <div id="divImgOteMap">
+                        <img src="../images/imgOtemachiMap.png" alt="大手町地図" width="387" height="361">
+                    </div>
+                </div>
+                <div id="divKudan">
+                    <div id="divImgLblKudan">
+                        <img src="../images/lblKudanshita.png" alt="PLACID 九段下" width="212" height="21">
+                    </div>
+                    <div id="divImgKudanMap">
+                        <img src="../images/imgKudanshitaMap.png" alt="九段下地図" width="387" height="361">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divFooter">
+        <!--フッター-->
+        <?php include("../contents/includeFooter.php"); ?>
+    </div>
+</form>
+</body>
+</html>
