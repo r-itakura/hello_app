@@ -3,12 +3,15 @@
 <head>
   <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag '/assets/reset', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <!-- <%= stylesheet_link_tag '/assets/text', media: 'all', 'data-turbolinks-track' => true %> -->
+  <%= stylesheet_link_tag '/assets/contents', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag '/assets/jquery-1.9.0.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag '/assets/common', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
 
-</body>
+</body>js
 </html>

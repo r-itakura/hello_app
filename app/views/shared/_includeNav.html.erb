@@ -1,0 +1,27 @@
+<div id="divNavBtn">
+    <ul id="ulNavBtn">
+        <li id="navTop">
+          <%= link_to image_tag('navTopOff.png' , :alt => 'トップ', :size => '198x62'), '../index' %>
+        </li>
+        <li id="navAbout">
+          <%= link_to image_tag('navAboutOff.png' , :alt => 'PlacidHotelsとは', :size => '198x62', :class => 'rollover'), '/static_pages/about' %>
+        </li>
+        <li id="navPrice">
+          <%= link_to image_tag('navPriceOff.png' , :alt => '料金表', :size => '198x62', :class => 'rollover'), '/static_pages/price' %>
+        </li>
+        <li id="navList">
+          <%= link_to image_tag('navListOff.png' , :alt => 'ホテル一覧', :size => '198x62', :class => 'rollover'), '/static_pages/hotellist' %>
+          <ul>
+              <li>
+                <%= link_to image_tag('navOoteOn.png#divImgOte' , :alt => 'PLACID大手町', :size => '198x62', :class => 'rollover'), '/static_pages/hotellist' %>
+              </li>
+              <li>
+                <%= link_to image_tag('navKudanOn.png#divImgKudan' , :alt => 'PLACID九段下', :size => '198x62', :class => 'rollover'), '/static_pages/hotellist' %>
+              </li>
+          </ul>
+        </li>
+        <li id="navAccess">
+          <%= link_to image_tag('navAccessOff.png' , :alt => 'アクセス', :size => '198x62', :class => 'rollover'), '/static_pages/access' %>
+        </li>
+    </ul>
+</div>

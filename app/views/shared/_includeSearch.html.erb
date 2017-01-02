@@ -1,0 +1,83 @@
+<!-- 空室検索Start -->
+<input type="hidden" id="hdnSelHtlId" name="hdnSelHtlId">
+<input type="hidden" id="hdnSelRsvDY" name="hdnSelRsvDY">
+<input type="hidden" id="hdnSelRsvDM" name="hdnSelRsvDM">
+<input type="hidden" id="hdnSelRsvDD" name="hdnSelRsvDD">
+<input type="hidden" id="hdnSelRsvDNum" name="hdnSelRsvDNum">
+<input type="hidden" id="hdnSelGstNum" name="hdnSelGstNum">
+<input type="hidden" id="hdnChkNoSmk" name="hdnChkNoSmk">
+<div id='divSearchInner'>
+  <div id='divLblSearch'>
+    <%= image_tag 'lblSearch.png' , :alt => '空室検索', :size => '64x15' %>
+  </div>
+	<table id='tblSearch' class='clsSearch'>
+    <tr>
+      <td>ホテル</td>
+      <td>
+        <span class='clsMargin20'>チェックイン</span>
+      </td>
+      <td>
+        <span class='clsMargin20'>ご宿泊日数</span>
+      </td>
+      <td>
+        <span class='clsMargin20'>人数</span>
+      </td>
+      <td>
+        <span class='clsMargin20'>禁煙</span>
+      </td>
+      <td id='tdBtnSearch' rowspan='2'>
+        <span class='clsMargin80'>
+          <input type='image' src='btnSearch.png' value='検索' alt='検索' onclick='fncSearch(this.form.id);'>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <select id='selHtlId' name='selHtlId' tabindex='1'>
+          <option value=".$row["HOTEL_ID"].">".$row["HOTEL_NM"]."</option>
+        </select>
+      </td>
+      <td>
+        <span class='clsMargin20'>
+          <select id='selRsvDY' name='selRsvDY' tabindex='2'>
+            <option value=".$year.">".$year."</option>
+          </select>
+        </span>
+        <span class='clsMargin10'>年</span>
+        <span class='clsMargin15'>
+          <select id='selRsvDM' name='selRsvDM' tabindex='3'>
+            <option value=".$month.">".$month."</option>
+	        </select>
+        </span>
+        <span class='clsMargin10'>月</span>
+        <span class='clsMargin15'>
+          <select id='selRsvDD' name='selRsvDD' tabindex='4'>
+            <option value=".$day.">".$day."</option>
+          </select>
+        </span>
+        <span class='clsMargin10'>日</span>
+      </td>
+      <td>
+        <span class='clsMargin20'>
+          <select id='selRsvDNum' name='selRsvDNum' tabindex='5'>
+            <option value=".$rsvDNum.">".$rsvDNum."</option>
+          </select>
+        </span>
+      </td>
+      <td>
+        <span class='clsMargin20'>
+          <select id='selGstNum' name='selGstNum' tabindex='6'>
+            <option value=".$gstNum.">".$gstNum."</option>
+          </select>
+        </span>
+      </td>
+      <td>
+        <span class='clsMargin20'>
+          <input type="checkbox" id="chkNoSmk" name="chkNoSmk" value="chkNoSmk"/>
+        </span>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<!-- 空室検索End -->
